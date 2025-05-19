@@ -8,6 +8,7 @@ namespace TipoParcial2
 {
     internal class CPaquete
     {
+<<<<<<< HEAD
         private static float impuesto;
         public static float Impuesto
         {
@@ -85,5 +86,7 @@ namespace TipoParcial2
             Num_Paquete = num_paquete;
             Detalle = detalle;
         }
+=======
+>>>>>>> d6440c635d63b9c68b0b4d981eaf63ed2c333f3b
     }
 }

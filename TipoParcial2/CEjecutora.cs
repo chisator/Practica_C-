@@ -4,6 +4,7 @@ namespace TipoParcial2
 {
     public class CEjecutora
     {
+<<<<<<< HEAD
         public static void Main()
         {
             List<CPaquete> listaPaquetes = new List<CPaquete>();
@@ -22,7 +23,7 @@ namespace TipoParcial2
             CPaquete p4 = new CPaquete(404, "Salta – 8 días y 6 noches – Avión – Hotel Norte – Pensión Completa");
             p4.SetCosto(9500.00f);
             listaPaquetes.Add(p4);
-            Boolean continuar = true;
+            
             //1) Solicitar impuesto
             Console.WriteLine("Ingrese impuesto único:");
             float impuesto = float.Parse(Console.ReadLine());
@@ -51,6 +52,25 @@ namespace TipoParcial2
             Console.WriteLine($"PAQUETE MAS ECONOMICO : {masBarato.DarDatos()}");
             
             return;
+=======
+        private static float impuesto;
+        public static float Impuesto
+        {
+            get => impuesto;
+            set=> impuesto = value;
+        }
+        public static void SetImpuesto(float valor)
+        {
+            impuesto = valor;
+        }
+        public static float GetImpuesto()
+        {
+            return impuesto;
+        }
+        public CEjecutora()
+        {
+            
+>>>>>>> d6440c635d63b9c68b0b4d981eaf63ed2c333f3b
         }
     }
 }
