@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace TipoParcial2
+﻿namespace TipoParcial2
 {
     public class CEjecutora
     {
-<<<<<<< HEAD
+
         public static void Main()
         {
             List<CPaquete> listaPaquetes = new List<CPaquete>();
@@ -52,25 +50,6 @@ namespace TipoParcial2
             Console.WriteLine($"PAQUETE MAS ECONOMICO : {masBarato.DarDatos()}");
             
             return;
-=======
-        private static float impuesto;
-        public static float Impuesto
-        {
-            get => impuesto;
-            set=> impuesto = value;
-        }
-        public static void SetImpuesto(float valor)
-        {
-            impuesto = valor;
-        }
-        public static float GetImpuesto()
-        {
-            return impuesto;
-        }
-        public CEjecutora()
-        {
-            
->>>>>>> d6440c635d63b9c68b0b4d981eaf63ed2c333f3b
         }
     }
 }
