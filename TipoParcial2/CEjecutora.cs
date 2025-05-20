@@ -30,7 +30,7 @@
             Console.WriteLine("Ingrese el número de paquete:");
             ushort num_paquete = ushort.Parse(Console.ReadLine());
             while (num_paquete != 0)
-            {    
+        {
                 Console.WriteLine("Ingrese la descripción del paquete:");
                 string? detalle = Console.ReadLine();
                 CPaquete paquete = new CPaquete(num_paquete, detalle);
@@ -40,12 +40,12 @@
                 listaPaquetes.Add(paquete);
                 Console.Write("\nIngrese Nro. de Paquete (0 para finalizar): ");
                 num_paquete = ushort.Parse(Console.ReadLine());
-            }
+        }
             if(listaPaquetes.Count == 0)
-            {
+        {
                 Console.WriteLine("No se ingresaron paquetes turísticos válidos.");
                 return;
-            }
+        }
             CPaquete masBarato = listaPaquetes.OrderBy(p => p.DarPrecio()).First();
             Console.WriteLine($"PAQUETE MAS ECONOMICO : {masBarato.DarDatos()}");
             
